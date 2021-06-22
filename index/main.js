@@ -14,7 +14,25 @@ const totalCostRange = document.getElementById("total-cost-range"),
 
 //variables for the results
 
-const amountOfCredit = document.getElementById("amount-of-credit"),
-      monthlyPayment = document.getElementById("monthly-payment"),
-      recommendedIncome = document.getElementById("recommended-income");
+const TotalAmountOfCredit = document.getElementById("amount-of-credit"),
+      TotalMonthlyPayment = document.getElementById("monthly-payment"),
+      TotalRecommendedIncome = document.getElementById("recommended-income");
+
+//variable to initiate the calculations 
+
+const inputRange = document.querySelectorAll(".input-range");
+
+// Arrow function expression (стрелочная функция)
+
+const assignValue = () => {
+	totalCost.value = totalCostRange.value; 
+	anInitialFee.value = anInitialFeeRange.value;
+	creditTerm.value = creditTermRange.value;
+}
+
+assignValue();
+
+
+
+
 
