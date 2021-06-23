@@ -32,6 +32,14 @@ const assignValue = () => {
 
 assignValue();
 
+ 
+for(let input of inputRange) {
+	input.addEventListener('input', () => {
+		assignValue();
+		console.log(totalCost.value);
+	})
+}
+
 
 
 
