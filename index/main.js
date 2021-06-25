@@ -2,14 +2,16 @@
 
 const totalCost = document.getElementById("total-cost"),
       anInitialFee = document.getElementById("an-initial-fee"),
-      creditTerm = document.getElementById("credit-term");
+      creditTerm = document.getElementById("credit-term")
+      percentage = document.getElementById("percentage");
 
 
 // variables for range inputs
 
 const totalCostRange = document.getElementById("total-cost-range"),
 	  anInitialFeeRange = document.getElementById("an-initial-fee-range"),
-	  creditTermRange = document.getElementById("credit-term-range");
+	  creditTermRange = document.getElementById("credit-term-range"),
+	  percentageRange = document.getElementById("percentage-range");
 
 
 //variables for the results
@@ -28,6 +30,7 @@ const assignValue = () => {
 	totalCost.value = totalCostRange.value; 
 	anInitialFee.value = anInitialFeeRange.value;
 	creditTerm.value = creditTermRange.value;
+	percentage.value = percentageRange.value;
 }
 
 assignValue();
