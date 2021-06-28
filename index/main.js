@@ -1,6 +1,6 @@
 // variables for text user inputs
 
-const totalCost = document.getElementById("total-cost"),
+const totalCost = document.getElementById("regular-contribution"),
       anInitialFee = document.getElementById("an-initial-fee"),
       creditTerm = document.getElementById("credit-term")
       percentage = document.getElementById("percentage");
@@ -8,7 +8,7 @@ const totalCost = document.getElementById("total-cost"),
 
 // variables for range inputs
 
-const totalCostRange = document.getElementById("total-cost-range"),
+const totalCostRange = document.getElementById("regular-contribution-range"),
 	  anInitialFeeRange = document.getElementById("an-initial-fee-range"),
 	  creditTermRange = document.getElementById("credit-term-range"),
 	  percentageRange = document.getElementById("percentage-range");
@@ -16,7 +16,7 @@ const totalCostRange = document.getElementById("total-cost-range"),
 
 //variables for the results
 
-const TotalAmountOfCredit = document.getElementById("amount-of-credit"),
+const TotalAmountOfCredit = document.getElementById("investment-total"),
       TotalMonthlyPayment = document.getElementById("monthly-payment"),
       TotalRecommendedIncome = document.getElementById("recommended-income");
 
@@ -39,9 +39,10 @@ assignValue();
 for(let input of inputRange) {
 	input.addEventListener('input', () => {
 		assignValue();
-		console.log(totalCost.value);
 	})
 }
+
+const calculation = (regularContribution = 0, anInitialFee = 0, )
 
 
 

@@ -18,26 +18,17 @@
 				<div  class="calculator-content-body-left">
 					<div   class="calculator-content-body-left-inputs">
 						<div class="input-wrapper">
-							<div class="title">Стоимость недвижимости</div>
-							<div class="input"> 
-								<input type="number" id="total-cost" value="0">
-							</div>
-							<div class="input">
-								<input type="range" min="0" max="100000000" id="total-cost-range" value="0" class="input-range">
-							</div>
-						</div>
-						<div class="input-wrapper">
-							<div class="title">Первоначальный взнос
+							<div class="title">Первоначальный капитал
 							</div>
 							<div class="input">
 								<input type="number" id="an-initial-fee" value="0">
 							</div>
 							<div class="input">
-								<input type="range" min="100000" max="100000000" id="an-initial-fee-range" value="0" class="input-range">
+								<input type="range" min="0" max="100000000" id="an-initial-fee-range" value="0" class="input-range">
 							</div>
 						</div> 
 						<div class="input-wrapper">
-							<div class="title">Срок кредита
+							<div class="title">Срок (месяцев)
 							</div>
 							<div class="input">
 								<input type="number" id="credit-term" value="0">
@@ -48,13 +39,23 @@
 						</div>
 
 						<div class="input-wrapper">
-							<div class="title"> Процентная ставка
+							<div class="title"> Доходность (процентная ставка)
 							</div>
 							<div class="input">
 								<input type="number" id="percentage" value="5">
 							</div>
 							<div class="input">
 								<input type="range" min="0" id="percentage-range" value="0" class="input-range">
+							</div>
+						</div>
+
+						<div class="input-wrapper">
+							<div class="title">Ежемесячный взнос</div>
+							<div class="input"> 
+								<input type="number" id="regular-contribution" value="0">
+							</div>
+							<div class="input">
+								<input type="range" min="0" max="100000000" id="regular-contribution-range" value="0" class="input-range">
 							</div>
 						</div>
 					</div>
@@ -64,9 +65,9 @@
 					<div class="final-results-wrapper">
 						<div class="final-results-item">
 							<div class="title">
-								Сумма кредита
+								Сумма капитала к концу инвестиционного периода
 							</div>
-							<div class="value" id="amount-of-credit">0<span>RUB</span>
+							<div class="value" id="investment-total">0<span>RUB</span>
 							</div>
 						</div>
 						<div class="final-results-item">
