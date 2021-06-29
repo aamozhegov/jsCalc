@@ -2,15 +2,15 @@
 
 const totalCost = document.getElementById("regular-contribution"),
       anInitialFee = document.getElementById("an-initial-fee"),
-      creditTerm = document.getElementById("credit-term")
-      percentage = document.getElementById("percentage");
+      investmentPeriod = document.getElementById("investment-period")
+      interestRate = document.getElementById("percentage");
 
 
 // variables for range inputs
 
 const totalCostRange = document.getElementById("regular-contribution-range"),
 	  anInitialFeeRange = document.getElementById("an-initial-fee-range"),
-	  creditTermRange = document.getElementById("credit-term-range"),
+	  investmentPeriodRange = document.getElementById("investment-period-range"),
 	  percentageRange = document.getElementById("percentage-range");
 
 
@@ -29,8 +29,8 @@ const inputRange = document.querySelectorAll(".input-range");
 const assignValue = () => {
 	totalCost.value = totalCostRange.value; 
 	anInitialFee.value = anInitialFeeRange.value;
-	creditTerm.value = creditTermRange.value;
-	percentage.value = percentageRange.value;
+	investmentPeriod.value = investmentPeriodRange.value;
+	interestRate.value = percentageRange.value;
 }
 
 assignValue();
@@ -39,6 +39,7 @@ assignValue();
 for(let input of inputRange) {
 	input.addEventListener('input', () => {
 		assignValue();
+		calculation(totalCost.value, anInitialFee.value, investmentPeriod.value  );
 	})
 }
 
@@ -51,9 +52,10 @@ investmentPeriod = compounding frecuency
 */
 
 const calculation = (anInitialFee = 0, interestRate = 0, investmentPeriod = 0) => {
-	let
-	newCapital = anInitialFee
-	console.log();
+	newCapital = anInitialFee * (1 + (interestRate/investmentPeriod));
+	const endCapital = Math.pow(newCapital, investmentPeriod);
+	const endCapitalRounded = Math.round(endCapital);
+	console.log(endCapitalRounded);
 }
 
 
