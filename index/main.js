@@ -42,7 +42,19 @@ for(let input of inputRange) {
 	})
 }
 
-const calculation = (regularContribution = 0, anInitialFee = 0, )
+/* 
+anInitialFee = initial principal balance
+interestRate = amount of interest per period (year)
+regularContribution = not done yet
+investmentPeriod = compounding frecuency
+
+*/
+
+const calculation = (anInitialFee = 0, interestRate = 0, investmentPeriod = 0) => {
+	let
+	newCapital = anInitialFee
+	console.log();
+}
 
 
 
