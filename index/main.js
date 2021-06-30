@@ -16,7 +16,7 @@ const totalCostRange = document.getElementById("regular-contribution-range"),
 
 //variables for the results
 
-const TotalAmountOfCredit = document.getElementById("investment-total"),
+const TotalInvestmentAmount = document.getElementById("investment-total"),
       TotalMonthlyPayment = document.getElementById("monthly-payment"),
       TotalRecommendedIncome = document.getElementById("recommended-income");
 
@@ -55,7 +55,12 @@ const calculation = (anInitialFee = 0, interestRate = 0, investmentPeriod = 0) =
 	newCapital = anInitialFee * (1 + (interestRate/investmentPeriod));
 	const endCapital = Math.pow(newCapital, investmentPeriod);
 	const endCapitalRounded = Math.round(endCapital);
-	console.log(endCapitalRounded);
+	if (endCapitalRounded < 0) {
+		return false; 
+	} else {
+		TotalInvestmentAmount.innerHTML = '$()'
+	}
+	
 }
 
 
