@@ -9,9 +9,9 @@ const totalCost = document.getElementById("regular-contribution"),
 // variables for range inputs
 
 const totalCostRange = document.getElementById("regular-contribution-range"),
-	  anInitialFeeRange = document.getElementById("an-initial-fee-range"),
-	  investmentPeriodRange = document.getElementById("investment-period-range"),
-	  percentageRange = document.getElementById("percentage-range");
+	anInitialFeeRange = document.getElementById("an-initial-fee-range"),
+	investmentPeriodRange = document.getElementById("investment-period-range"),
+	percentageRange = document.getElementById("percentage-range");
 
 
 //variables for the results
@@ -57,8 +57,10 @@ const calculation = (anInitialFee = 0, interestRate = 0, investmentPeriod = 0) =
 	const endCapitalRounded = Math.round(endCapital);
 	if (endCapitalRounded < 0) {
 		return false; 
+	} else if (interestRate == 0) {
+		TotalInvestmentAmount.innerHTML = '$(anInitialFee) RUB';
 	} else {
-		TotalInvestmentAmount.innerHTML = '$( )'
+		
 	}
 	
 }
