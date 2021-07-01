@@ -58,7 +58,7 @@ const calculation = (anInitialFee = 0, interestRate = 0, investmentPeriod = 0) =
 	if (endCapitalRounded < 0) {
 		return false; 
 	} else {
-		TotalInvestmentAmount.innerHTML = '$()'
+		TotalInvestmentAmount.innerHTML = '$( )'
 	}
 	
 }
