@@ -1,3 +1,24 @@
 body {
 	background: whitesmoke;
 }
+
+.calculator-content-body {
+	display: table;
+	float: center;
+}
+
+.calculator-content-body-left {
+	display: table-cell;
+	/*float: left;
+	border: 1px #000 solid;
+	border-left-width: 0;
+	border-top-width: 0;
+	border-bottom-width: 0;*/
+}
+
+
+.calculator-content-body-right {
+	display: table-cell;
+	/*float: right;
+	border: 1px #000 solid;*/
+}
