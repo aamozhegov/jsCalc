@@ -28,13 +28,13 @@
 							</div>
 						</div> 
 						<div class="input-wrapper">
-							<div class="title">Срок (месяцев)
+							<div class="title">Срок инвестиций (лет)
 							</div>
 							<div class="input">
 								<input type="number" id="investment-period" value="0">
 							</div>
 							<div class="input">
-								<input type="range" min="1" max="20" id="investment-period-range" value="0" class="input-range">
+								<input type="range" min="1" max="10" id="investment-period-range" value="0" class="input-range">
 							</div>
 						</div>
 
@@ -42,10 +42,10 @@
 							<div class="title"> Доходность (процентная ставка)
 							</div>
 							<div class="input">
-								<input type="number" id="percentage" value="5">
+								<input type="number" id="interest-rate" value="0">
 							</div>
 							<div class="input">
-								<input type="range" min="0" max="500" id="percentage-range" value="0" class="input-range">
+								<input type="range" min="0" max="500" id="interest-rate-range" value="0" class="input-range">
 							</div>
 						</div>
 						<!--
@@ -68,7 +68,7 @@
 							<div class="title">
 								Сумма капитала к концу инвестиционного периода
 							</div>
-							<div class="value" id="investment-total">0<span>RUB</span>
+							<div class="value" id="total-capital">0<span>RUB</span>
 							</div>
 						</div>
 						<div class="final-results-item">

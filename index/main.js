@@ -1,22 +1,22 @@
-// valueы of text inputs
+// variables for  values of text inputs
 
 // const totalCost = document.getElementById("regular-contribution"),
 const primaryCapital = document.getElementById("primary-capital"),
       investmentPeriod = document.getElementById("investment-period"),
-      interestRate = document.getElementById("percentage");
+      interestRate = document.getElementById("interest-rate");
 
 
-// values of range inputs
+// variables for values of range inputs
 
-const totalCostRange = document.getElementById("regular-contribution-range");
-	primaryCapitalRange = document.getElementById("primary-capital-range"),
+// const totalCostRange = document.getElementById("regular-contribution-range");
+const	primaryCapitalRange = document.getElementById("primary-capital-range"),
 	investmentPeriodRange = document.getElementById("investment-period-range"),
-	percentageRange = document.getElementById("percentage-range");
+	interestRateRange = document.getElementById("interest-rate-range");
 
 
-//values of end calculations
+//variables for values of investments by the end of investment period
 
-const TotalInvestmentAmount = document.getElementById("investment-total"),
+const TotalCapital = document.getElementById("total-capital"),
       TotalMonthlyPayment = document.getElementById("monthly-payment"),
       TotalRecommendedIncome = document.getElementById("recommended-income");
 
@@ -61,9 +61,9 @@ const calculation = (primaryCapital = 0, interestRate = 0, investmentPeriod = 0)
 	if (endCapitalRounded < 0) {
 		return false; 
 	} else if (interestRate == 0) {
-		TotalInvestmentAmount.innerHTML = '${primaryCapital} RUB';
+		TotalCapital.innerHTML = '${primaryCapital} RUB';
 	} else {
-		TotalInvestmentAmount.innerHTML = inititalCapital;
+		TotalCapital.innerHTML = inititalCapital;
 	}
 	
 }
