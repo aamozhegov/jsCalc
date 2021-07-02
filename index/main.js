@@ -1,20 +1,20 @@
-// variables for text user inputs
+// valueы of text inputs
 
-const totalCost = document.getElementById("regular-contribution"),
-      anInitialFee = document.getElementById("an-initial-fee"),
+// const totalCost = document.getElementById("regular-contribution"),
+const primaryCapital = document.getElementById("primary-capital"),
       investmentPeriod = document.getElementById("investment-period"),
       interestRate = document.getElementById("percentage");
 
 
-// variables for range inputs
+// values of range inputs
 
-const totalCostRange = document.getElementById("regular-contribution-range"),
-	anInitialFeeRange = document.getElementById("an-initial-fee-range"),
+const totalCostRange = document.getElementById("regular-contribution-range");
+	primaryCapitalRange = document.getElementById("primary-capital-range"),
 	investmentPeriodRange = document.getElementById("investment-period-range"),
 	percentageRange = document.getElementById("percentage-range");
 
 
-//variables for the results
+//values of end calculations
 
 const TotalInvestmentAmount = document.getElementById("investment-total"),
       TotalMonthlyPayment = document.getElementById("monthly-payment"),
@@ -28,7 +28,7 @@ const inputRange = document.querySelectorAll(".input-range");
 
 const assignValue = () => {
 	totalCost.value = totalCostRange.value; 
-	anInitialFee.value = anInitialFeeRange.value;
+	primaryCapital.value = primaryCapitalRange.value;
 	investmentPeriod.value = investmentPeriodRange.value;
 	interestRate.value = percentageRange.value;
 }
@@ -39,29 +39,29 @@ assignValue();
 for(let input of inputRange) {
 	input.addEventListener('input', () => {
 		assignValue();
-		calculation(totalCost.value, anInitialFee.value, investmentPeriod.value  );
+		calculation(totalCost.value, primaryCapital.value, investmentPeriod.value  );
 	})
 }
 
 /* 
-anInitialFee = initial principal balance
+primaryCapital = initial principal balance
 interestRate = amount of interest per period (year)
 regularContribution = not done yet
 investmentPeriod = compounding frecuency
 
 */
 
-const calculation = (anInitialFee = 0, interestRate = 0, investmentPeriod = 0) => {
+const calculation = (primaryCapital = 0, interestRate = 0, investmentPeriod = 0) => {
 	let newCapital; // Investment by the end of the term
-	let inititalCapital = anInitialFee;
+	let inititalCapital = primaryCapital;
 
-	newCapital = anInitialFee * (1 + (interestRate/investmentPeriod));
+	newCapital = inititalCapital * (1 + (interestRate/investmentPeriod));
 	const endCapital = Math.pow(newCapital, investmentPeriod);
 	const endCapitalRounded = Math.round(endCapital);
 	if (endCapitalRounded < 0) {
 		return false; 
 	} else if (interestRate == 0) {
-		TotalInvestmentAmount.innerHTML = '${anInitialFee} RUB';
+		TotalInvestmentAmount.innerHTML = '${primaryCapital} RUB';
 	} else {
 		TotalInvestmentAmount.innerHTML = inititalCapital;
 	}
