@@ -2,7 +2,7 @@
 
 const totalCost = document.getElementById("regular-contribution"),
       anInitialFee = document.getElementById("an-initial-fee"),
-      investmentPeriod = document.getElementById("investment-period")
+      investmentPeriod = document.getElementById("investment-period"),
       interestRate = document.getElementById("percentage");
 
 
@@ -52,15 +52,18 @@ investmentPeriod = compounding frecuency
 */
 
 const calculation = (anInitialFee = 0, interestRate = 0, investmentPeriod = 0) => {
+	let newCapital; // Investment by the end of the term
+	let inititalCapital = anInitialFee;
+
 	newCapital = anInitialFee * (1 + (interestRate/investmentPeriod));
 	const endCapital = Math.pow(newCapital, investmentPeriod);
 	const endCapitalRounded = Math.round(endCapital);
 	if (endCapitalRounded < 0) {
 		return false; 
 	} else if (interestRate == 0) {
-		TotalInvestmentAmount.innerHTML = '$(anInitialFee) RUB';
+		TotalInvestmentAmount.innerHTML = '${anInitialFee} RUB';
 	} else {
-		
+		TotalInvestmentAmount.innerHTML = inititalCapital;
 	}
 	
 }
