@@ -3,7 +3,7 @@ body {
 }
 
 .calculator-content-body {
-	display: table;
+	width: 500px;
 	float: center;
 }
 
