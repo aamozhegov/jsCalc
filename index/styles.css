@@ -5,7 +5,12 @@ body {
 .calculator-content-body {
 	width: 500px;
 	float: center;
-	
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px solid #000;
+	padding: 10px;
 }
 
 .calculator-content-body-left {
