@@ -68,6 +68,10 @@ const calculation = (primaryCapital = 0, interestRate = 0, investmentPeriod = 0)
 	
 }
 
+// Multi-Language logic
+
+
+
 
 
 
