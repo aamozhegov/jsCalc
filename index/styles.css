@@ -9,6 +9,21 @@ body {
 	background: whitesmoke;
 }
 
+
+a {
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 15px;
+	font-weight: bold;
+	background: #555656;
+	font-size: 18px;
+}
+
+a.active-lang {
+	background: #ebc934;
+}
+
 /*
 input[type=range]::-webkit-slider-thumb {
 	box-shadow: 1px 1px 1px #000000;
@@ -49,6 +64,7 @@ input[type=range]::-webkit-slider-thumb {
 	font-family: 'Playfair Display', serif;
 }
 
+/*
 .navigation {
 	float: right;
 	height: 100%;
@@ -72,6 +88,7 @@ input[type=range]::-webkit-slider-thumb {
 .navigation a:last-child {
 	padding-right: 0;
 }
+*/
 
 .calculator-content-body {
 	width: 500px;

@@ -70,6 +70,35 @@ const calculation = (primaryCapital = 0, interestRate = 0, investmentPeriod = 0)
 
 // Multi-Language logic
 
+const langEl = document.querySelector(".lang-wrap");
+const link = document.querySelectorAll("a");
+const titleEl = document.querySelector(".title");
+const descriptionEl = document.querySelector(".description");
+
+link.forEach(el => {
+	el.addEventListener("click", () => {
+		langEl.querySelector(".active-lang").classList.remove("active-lang");
+		el.classList.add("active-lang");
+	});
+});
+
+var data = {
+	"eng": {
+		"title": "Compound Interest Calculator",
+		"description": "Compound interest is the addition of interest to the principal sum of money, or in other words, interest on interest. Use our compound interest calculator to create a projection of how much your savings or investments might grow over a period of time using the power of compound interest."
+	}
+
+	"esp": {
+		"title": "Calculadora de interés compuesto",
+		"description": "El interés compuesto es la suma de los intereses a la suma principal de dinero, o en otras palabras, los intereses sobre los intereses. Utilice nuestra calculadora de interés compuesto para crear una proyección de cuánto podrían crecer sus ahorros o inversiones durante un período de tiempo utilizando el poder del interés compuesto."
+	}
+
+	"de": {
+		"title": "Zinseszinsrechner",
+		"description": "Der Zinseszins ist die Aufstockung der Zinsen auf den Kapitalbetrag, also Zinsen auf Zinsen. Verwenden Sie unseren Zinseszinsrechner, um eine Prognose zu erstellen, wie viel Ihre Ersparnisse oder Investitionen über einen bestimmten Zeitraum mit der Kraft des Zinseszinses wachsen könnten."
+	}
+
+}
 
 
 
