@@ -77,8 +77,13 @@ const descriptionEl = document.querySelector(".description");
 
 link.forEach(el => {
 	el.addEventListener("click", () => {
-		langEl.querySelector(".active-lang").classList.remove("active-lang");
-		el.classList.add("active-lang");
+		langEl.querySelector(".active-lang").classList.remove(".active-lang");
+		el.classList.add(".active-lang");
+
+		const attr = el.getAttribute("language");
+
+		titleEl.textContent = data[attr].title;
+		descriptionEl.textContent = data[attr].description;
 	});
 });
 
