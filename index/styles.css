@@ -10,19 +10,9 @@ body {
 }
 
 
-a {
-	text-transform: uppercase;
-	color: #fff;
-	text-decoration: none;
-	padding: 0 15px;
-	font-weight: bold;
-	background: #555656;
-	font-size: 18px;
-}
 
-a.active-lang {
-	background: #ebc934;
-}
+/* #ebc934
+
 
 /*
 input[type=range]::-webkit-slider-thumb {
