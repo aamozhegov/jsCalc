@@ -116,3 +116,13 @@ input[type=range]::-webkit-slider-thumb {
 	font-family: 'Playfair Display', serif;
 }
 
+
+/* styles for multi-language features */
+
+.translate {
+	background: transparent;
+	border: none;
+	margin-left: 12px;
+	float: right;
+	margin-top: 35px;
+}

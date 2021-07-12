@@ -72,7 +72,9 @@ const calculation = (primaryCapital = 0, interestRate = 0, investmentPeriod = 0)
 
 
 
-
+$(document).ready(function() {
+	$("#demo").html("Hello, World!");
+});
 
 
 

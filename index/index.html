@@ -24,7 +24,7 @@
 						</button>
 					</li>
 					<li class="header-item-lang-esp">
-						<button id="esp" class="translate">
+						<button id="ru" class="translate">
 							🇪🇸
 						</button>
 					</li>
@@ -43,15 +43,15 @@
 	<div class="flex-wrapper">
 		<div class="calculator-content">
 			<div class="calculator-content-title">
-				<h1 id="web-page-title">Compound Interest Calculator</h1>
-				<p class="web-page-description">Compound interest is the addition of interest to the principal sum of money, or in other words, interest on interest.
+				<h1 id="web-page-title" class="lang" key="CompInterestCalc">Compound Interest Calculator</h1>
+				<p class="web-page-description lang" key="Introduction">Compound interest is the addition of interest to the principal sum of money, or in other words, interest on interest.
 				Use our compound interest calculator to create a projection of how much your savings or investments might grow over a period of time using the power of compound interest. </p>
 			</div>
 			<div class="calculator-content-body">
 				<div  class="calculator-content-body-left">
 					<div   class="calculator-content-body-left-inputs">
 						<div class="input-wrapper">
-							<div class="title">Initail Capital
+							<div class="title lang" key="InitCapital">Initail Capital
 							</div>
 							<div class="input">
 								<input type="number" id="primary-capital" value="0">
@@ -61,7 +61,7 @@
 							</div>
 						</div> 
 						<div class="input-wrapper">
-							<div class="title">Investment Duration (years):
+							<div class="title lang" key="InvestDuration">Investment Duration (years):
 							</div>
 							<div class="input">
 								<input type="number" id="investment-period" value="0">
@@ -127,6 +127,8 @@
 		</div>
 	</div>
 	
-	<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="scripts.js"></script>
+	<p id="demo"></p>
 </body>
 </html>
