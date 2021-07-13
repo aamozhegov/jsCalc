@@ -19,6 +19,16 @@ var arrLang = {
         "invest-end" : "Конечная сумма:",
         "profit" : "Наращенная сумма:",
     }
+
+    "de": {
+        "comp-interest-calc" : "Zinseszinsrechner",
+        "introduction" : "Der Zinseszins ist die Aufstockung der Zinsen auf den Kapitalbetrag, also Zinsen auf Zinsen. Verwenden Sie unseren Zinseszinsrechner, um eine Prognose zu erstellen, wie viel Ihre Ersparnisse oder Investitionen über einen bestimmten Zeitraum mit der Kraft des Zinseszinses wachsen könnten.",
+        "init-capital" : "Anfangskapital:",
+        "invest-duration" : "Anlagezeitraum:",
+        "profit-ratio" : "Jährlicher Zinssatz :",
+        "invest-end" : "Endkapital:",
+        "profit" : "Erhaltenen Zinszahlungen:",
+    }
 }
 
 
