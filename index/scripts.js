@@ -18,7 +18,7 @@ var arrLang = {
         "profit-ratio" : "Процентная ставка:",
         "invest-end" : "Конечная сумма:",
         "profit" : "Наращенная сумма:",
-    }
+    },
 
     "de": {
         "comp-interest-calc" : "Zinseszinsrechner",
@@ -28,7 +28,7 @@ var arrLang = {
         "profit-ratio" : "Jährlicher Zinssatz :",
         "invest-end" : "Endkapital:",
         "profit" : "Erhaltenen Zinszahlungen:",
-    }
+    },
 
     "esp": {
         "comp-interest-calc" : "calculadora de interés compuesto",
@@ -38,7 +38,7 @@ var arrLang = {
         "profit-ratio" : "Tasa de interés:",
         "invest-end" : "Ahorros totales:",
         "profit" : "Lucro:",
-    }
+    },
 }
 
 
