@@ -84,7 +84,7 @@ function getLocalLang() {
             $('.lang').each(function(index, item) {
                 $(this).text(arrLang[lang][$(this).attr("key")]);
             });
-        }, 0)
+        }, )
     })
 }
 
