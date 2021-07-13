@@ -29,6 +29,16 @@ var arrLang = {
         "invest-end" : "Endkapital:",
         "profit" : "Erhaltenen Zinszahlungen:",
     }
+
+    "esp": {
+        "comp-interest-calc" : "calculadora de interés compuesto",
+        "introduction" : "El interés compuesto es la suma de los intereses a la suma principal de dinero, o en otras palabras, los intereses sobre los intereses. Utilice nuestra calculadora de interés compuesto para crear una proyección de cuánto podrían crecer sus ahorros o inversiones durante un período de tiempo utilizando el poder del interés compuesto.",
+        "init-capital" : "Inversión inicial:",
+        "invest-duration" : "Duración de la inversión (años):",
+        "profit-ratio" : "Tasa de interés:",
+        "invest-end" : "Ahorros totales:",
+        "profit" : "Lucro:",
+    }
 }
 
 
