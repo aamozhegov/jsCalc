@@ -54,6 +54,11 @@ input[type=range]::-webkit-slider-thumb {
 	font-family: 'Playfair Display', serif;
 }
 
+.calculator-content-title {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
 /*
 .navigation {
 	float: right;
