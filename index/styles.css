@@ -7,10 +7,16 @@
 
 body {
 	background: whitesmoke;
+	margin: 0;
 }
+
+
 
 .page {
 	overflow: hidden;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+ 	min-height: 100vh;
 }
 
 .header {
@@ -64,6 +70,10 @@ body {
 	bottom: 0;
 }
 
+.footer {
+	margin-top: auto;
+}
+
 
 .calculator-content-body {
 	width: 700px;
@@ -81,7 +91,9 @@ body {
 	align-items: center;
 	font-size: 16px;
 
+
 }
+
 
 .calculator-content-body-left {
 	height: 200px;
