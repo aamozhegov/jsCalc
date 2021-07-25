@@ -9,7 +9,9 @@ body {
 	background: whitesmoke;
 }
 
-
+.page {
+	overflow: hidden;
+}
 
 .header {
 	width: 100%;
